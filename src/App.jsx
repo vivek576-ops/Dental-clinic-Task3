@@ -9,7 +9,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/leads", {
+      await axios.post("https://mini-crm-task-production.up.railway.app/api/leads", {
         ...formData,
         source: "Clinic Website" 
       });
@@ -110,17 +110,17 @@ function App() {
           <div className="contact-card">
             <div className="icon">📞</div>
             <h3>Phone</h3>
-            <p>+91 98765 43210</p>
+            <p>+91 7032118129</p>
           </div>
           <div className="contact-card">
             <div className="icon">📧</div>
             <h3>Email</h3>
-            <p>contact@smilecare.com</p>
+            <p>cliniccare@smilecare.com</p>
           </div>
           <div className="contact-card">
             <div className="icon">📍</div>
             <h3>Location</h3>
-            <p>123 Dental Street, Hyderabad</p>
+            <p>Dental Street, Hyderabad</p>
           </div>
         </div>
       </section>
